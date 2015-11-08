@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 MAINTAINER Lachlan Evenson <lachlan.evenson@gmail.com>
 
 ENV SVC_ROOT=/opt/bin
-ENV KUBE_LATEST_VERSION="v1.1.1-beta.1"
+ENV KUBE_LATEST_VERSION="v1.2.0-alpha.3"
 ENV KUBE_LATEST_URL="https://github.com/GoogleCloudPlatform/kubernetes/releases/download/${KUBE_LATEST_VERSION}/kubernetes.tar.gz"
 
 RUN apt-get install -y wget zip && apt-get clean && apt-get purge
