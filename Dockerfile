@@ -6,7 +6,7 @@ ENV SVC_ROOT=/opt/bin
 ENV KUBE_LATEST_VERSION="v1.2.3"
 ENV KUBE_LATEST_URL="https://github.com/kubernetes/kubernetes/releases/download/${KUBE_LATEST_VERSION}/kubernetes.tar.gz"
 
-RUN apt-get install -y wget zip && apt-get clean && apt-get purge
+RUN apt-get update && apt-get install -y wget zip && apt-get clean && apt-get purge
 RUN mkdir -p ${SVC_ROOT}
 
 WORKDIR ${SVC_ROOT}
