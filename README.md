@@ -1,5 +1,14 @@
 # Kubernetes Client
 
+[![](https://imagelayers.io/badge/lachlanevenson/k8s-kubectl:latest.svg)](https://imagelayers.io/?images=lachlanevenson/k8s-kubectl:latest 'Get your own badge on imagelayers.io')
+
+# Supported tags and respective `Dockerfile` links
+* `1.3.0-alpha.4`    [(1.3.0-alpha.4/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.3.0-alpha.4/Dockerfile)
+* `1.2.4`, `latest`    [(1.2.4/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.2.4/Dockerfile)
+* `1.1.8`,     [(1.1.8/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.1.8/Dockerfile)
+* `1.0.7`,     [(1.0.7/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.0.7/Dockerfile)
+
+
 ## Overview
 This container provides the Kubernetes client kubectl which can be used to interact with a Kubernetes cluster
 
@@ -39,5 +48,6 @@ rm ./Dockerfile.data-container
 ```
 
 ## Data container with kubectl container
-
-`docker run --rm -it --volumes-from data k8s/kubectl:<tag> --server=http://<server-name>:8080 create -f /data/controller.yml`
+```
+docker run --rm -it --volumes-from data k8s/kubectl:<tag> --server=http://<server-name>:8080 create -f /data/controller.yml
+```
