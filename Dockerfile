@@ -12,4 +12,3 @@ RUN apk add --update -t deps curl ca-certificates \
 
 ENTRYPOINT ["kubectl"]
 CMD ["help"]
-
