@@ -2,7 +2,7 @@ FROM alpine
 
 MAINTAINER Lachlan Evenson <lachlan.evenson@gmail.com>
 
-ENV KUBE_LATEST_VERSION="v1.3.3"
+ENV KUBE_LATEST_VERSION="v1.3.4"
 
 RUN apk add --update -t deps curl ca-certificates \
  && curl -L https://storage.googleapis.com/kubernetes-release/release/${KUBE_LATEST_VERSION}/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl \
