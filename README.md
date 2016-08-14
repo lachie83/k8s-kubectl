@@ -1,6 +1,7 @@
 # Kubernetes Client
 
-[![](https://imagelayers.io/badge/lachlanevenson/k8s-kubectl:latest.svg)](https://imagelayers.io/?images=lachlanevenson/k8s-kubectl:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/lachlanevenson/k8s-kubectl.svg)](http://microbadger.com/images/lachlanevenson/k8s-kubectl "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/lachlanevenson/k8s-kubectl.svg)](http://microbadger.com/images/lachlanevenson/k8s-kubectl "Get your own version badge on microbadger.com")
 
 # Supported tags and respective `Dockerfile` links
 * `1.3.5`, `latest`    [(1.3.5/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.3.5/Dockerfile)
