@@ -5,7 +5,7 @@
 [![](https://images.microbadger.com/badges/commit/lachlanevenson/k8s-kubectl.svg)](http://microbadger.com/images/lachlanevenson/k8s-kubectl "Get your own commit badge on microbadger.com")
 
 # Supported tags and respective `Dockerfile` links
-* `1.5.2`, `latest`    [(1.5.2/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.5.2/Dockerfile)
+* `1.5.3`, `latest`    [(1.5.3/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.5.3/Dockerfile)
 * `1.4.8`,     [(1.4.8/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.4.8/Dockerfile)
 * `1.3.10`,    [(1.3.10/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.3.10/Dockerfile)
 * `1.2.6`,     [(1.2.6/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.2.6/Dockerfile)
