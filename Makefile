@@ -1,7 +1,13 @@
 default: docker_build
 
 DOCKER_IMAGE ?= lachlanevenson/k8s-kubectl
-DOCKER_TAG ?= `git rev-parse --abbrev-ref HEAD`
+GIT_BRANCH ?= `git rev-parse --abbrev-ref HEAD`
+
+ifeq ($(GIT_BRANCH), master)
+	DOCKER_TAG = latest
+else
+	DOCKER_TAG = $(GIT_BRANCH)
+endif
 
 docker_build:
 	@docker build \
@@ -12,3 +18,6 @@ docker_build:
 docker_push:
 	# Push to DockerHub
 	docker push $(DOCKER_IMAGE):$(DOCKER_TAG)
+
+test:
+	docker run $(DOCKER_IMAGE):$(DOCKER_TAG) version --client
