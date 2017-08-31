@@ -16,6 +16,10 @@ jobs:
             GIT_BRANCH=$CIRCLE_BRANCH make test
       - run:
           name: Publish kubectl container
+          branches:
+            only:
+              - master
+              - /v.*/
           command: |
             echo $DOCKER_PASS | base64 -d > ${HOME}/docker_pass
             docker login -u $DOCKER_USER -p "$(cat ${HOME}/docker_pass)"
