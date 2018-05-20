@@ -1,4 +1,4 @@
-FROM alpine
+FROM loicmahieu/alpine-envsubst
 
 LABEL maintainer="Lachlan Evenson <lachlan.evenson@gmail.com>"
 
