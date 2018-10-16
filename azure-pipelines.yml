@@ -8,4 +8,6 @@ pool:
 
 steps:
 - script: GIT_BRANCH=$(build.SourceBranchName) make docker_build
-  displayName: 'docker build'
+  displayName: 'Build kubectl container'
+- script: GIT_BRANCH=$(build.SourceBranchName) make test
+  displayName: 'Test kubectl container'
