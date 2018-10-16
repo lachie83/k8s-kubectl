@@ -11,3 +11,9 @@ steps:
   displayName: 'Build kubectl container'
 - script: GIT_BRANCH=$(build.SourceBranchName) make test
   displayName: 'Test kubectl container'
+- script: |
+    docker login -u $(dockerId) -p $(pswd)
+    GIT_BRANCH=$(build.SourceBranchName) make docker_push
+  condition: startsWith(variables['Build.SourceBranchName'], 'master', 'v')
+  displayName: 'Publish kubectl container'
+
