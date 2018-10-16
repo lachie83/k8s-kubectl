@@ -1,7 +1,7 @@
 # Kubernetes Client
 
-### CircleCI Build Status
-[![CircleCI](https://circleci.com/gh/lachie83/k8s-kubectl.svg?style=svg)](https://circleci.com/gh/lachie83/k8s-kubectl)
+### Azure DevOps Build Status
+[![Build Status](https://dev.azure.com/laevenso/k8s/_apis/build/status/lachie83.k8s-kubectl)](https://dev.azure.com/laevenso/k8s/_build/latest?definitionId=1)
 
 ### Container Details
 [![](https://images.microbadger.com/badges/image/lachlanevenson/k8s-kubectl.svg)](http://microbadger.com/images/lachlanevenson/k8s-kubectl "Get your own image badge on microbadger.com")
