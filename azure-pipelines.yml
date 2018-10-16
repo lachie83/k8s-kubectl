@@ -7,5 +7,5 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
-- script: GIT_BRANCH=$(build.SourceBranch) make docker_build
+- script: GIT_BRANCH=$(build.SourceBranchName) make docker_build
   displayName: 'docker build'
