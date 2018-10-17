@@ -1,7 +1,7 @@
 default: docker_build
 
 DOCKER_IMAGE ?= lachlanevenson/k8s-kubectl
-GIT_BRANCH ?= `git rev-parse --abbrev-ref HEAD`
+GIT_BRANCH ?= $(shell git rev-parse --abbrev-ref HEAD)
 
 ifeq ($(GIT_BRANCH), master)
 	DOCKER_TAG = latest

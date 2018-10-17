@@ -18,5 +18,6 @@ steps:
 - script: |
     docker login -u $(dockerId) -p $(pswd)
     GIT_BRANCH=$(build.SourceBranchName) make docker_push
+  condition: or(startsWith(variables['Build.SourceBranchName'], 'v'), startsWith(variables['Build.SourceBranchName'], 'master'))
   displayName: 'Publish kubectl container'
 
