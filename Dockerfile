@@ -1,4 +1,4 @@
-FROM golang:1.14.2-alpine3.11 as builder
+FROM alpine as builder
 
 RUN apk update && apk add curl tar bash
 
