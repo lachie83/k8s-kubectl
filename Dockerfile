@@ -33,7 +33,7 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
 COPY --from=builder /kustomize/kustomize /usr/local/bin
 RUN chmod +x /usr/local/bin/kustomize
 
-ENV KUBE_LATEST_VERSION="v1.18.3"
+ENV KUBE_LATEST_VERSION="v1.18.4"
 
 RUN apk add --update ca-certificates \
  && apk add --update -t deps curl \
