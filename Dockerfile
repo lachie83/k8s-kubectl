@@ -29,11 +29,10 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.docker.dockerfile="/Dockerfile"
 
-
 COPY --from=builder /kustomize/kustomize /usr/local/bin
 RUN chmod +x /usr/local/bin/kustomize
 
-ENV KUBE_LATEST_VERSION="v1.18.4"
+ENV KUBE_LATEST_VERSION="v1.18.5"
 
 RUN apk add --update ca-certificates \
  && apk add --update -t deps curl \
