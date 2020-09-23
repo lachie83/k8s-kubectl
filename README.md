@@ -10,8 +10,8 @@
 
 # Supported tags and respective `Dockerfile` links
 * `v1.19.2`, `latest`    [(v1.19.2/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.19.2/Dockerfile)
-* `v1.18.8`,    [(v1.18.8/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.18.8/Dockerfile)
-* `v1.17.11`,   [(v1.17.11/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.17.11/Dockerfile)
+* `v1.18.9`,    [(v1.18.9/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.18.9/Dockerfile)
+* `v1.17.12`,   [(v1.17.12/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.17.12/Dockerfile)
 * `v1.16.14`,   [(v1.16.14/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.16.14/Dockerfile)
 * `v1.15.12`,   [(v1.15.12/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.15.12/Dockerfile)
 * `v1.14.10`,   [(v1.14.10/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.14.10/Dockerfile)
