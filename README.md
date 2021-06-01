@@ -41,6 +41,8 @@ This container provides the Kubernetes client kubectl which can be used to inter
    * linux/s390x
    * linux/ppc64le
 
+Massive thanks to [barthy1](https://github.com/barthy1) via [PR](https://github.com/lachie83/k8s-helm/pull/89) for contributing this work.
+
 ## Build
 `make docker_build`
 
