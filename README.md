@@ -1,7 +1,7 @@
 # Kubernetes Client
 
-### Azure DevOps Build Status
-[![Build Status](https://dev.azure.com/laevenso/k8s/_apis/build/status/lachie83.k8s-kubectl)](https://dev.azure.com/laevenso/k8s/_build/latest?definitionId=1)
+### Build GitHub Action Status
+![Build and Publish Helm container](https://github.com/lachie83/k8s-helm/workflows/Build%20and%20Publish%20kubectl%20container/badge.svg)
 
 ### Container Details
 [![](https://images.microbadger.com/badges/image/lachlanevenson/k8s-kubectl.svg)](http://microbadger.com/images/lachlanevenson/k8s-kubectl "Get your own image badge on microbadger.com")
