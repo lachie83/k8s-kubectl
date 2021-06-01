@@ -1,7 +1,7 @@
 # Kubernetes Client
 
-### Azure DevOps Build Status
-[![Build Status](https://dev.azure.com/laevenso/k8s/_apis/build/status/lachie83.k8s-kubectl)](https://dev.azure.com/laevenso/k8s/_build/latest?definitionId=1)
+### Build GitHub Action Status
+![Build and Publish Helm container](https://github.com/lachie83/k8s-helm/workflows/Build%20and%20Publish%20kubectl%20container/badge.svg)
 
 ### Container Details
 [![](https://images.microbadger.com/badges/image/lachlanevenson/k8s-kubectl.svg)](http://microbadger.com/images/lachlanevenson/k8s-kubectl "Get your own image badge on microbadger.com")
@@ -33,7 +33,15 @@
 * `v1.0.7`,     [(v1.0.7/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.0.7/Dockerfile)
 
 ## Overview
-This container provides the Kubernetes client kubectl which can be used to interact with a Kubernetes cluster
+This container provides the Kubernetes client kubectl which can be used to interact with a Kubernetes cluster.
+
+## Supported OS/ARCH
+   * linux/amd64
+   * linux/arm64
+   * linux/s390x
+   * linux/ppc64le
+
+Massive thanks to [barthy1](https://github.com/barthy1) via [PR](https://github.com/lachie83/k8s-helm/pull/89) for contributing this work.
 
 ## Build
 `make docker_build`
