@@ -33,7 +33,13 @@
 * `v1.0.7`,     [(v1.0.7/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.0.7/Dockerfile)
 
 ## Overview
-This container provides the Kubernetes client kubectl which can be used to interact with a Kubernetes cluster
+This container provides the Kubernetes client kubectl which can be used to interact with a Kubernetes cluster.
+
+## Supported OS/ARCH
+   * linux/amd64
+   * linux/arm64
+   * linux/s390x
+   * linux/ppc64le
 
 ## Build
 `make docker_build`
