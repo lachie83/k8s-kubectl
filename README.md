@@ -1,7 +1,7 @@
 # Kubernetes Client
 
 ### Build GitHub Action Status
-![Build and Publish Helm container](https://github.com/lachie83/k8s-helm/workflows/Build%20and%20Publish%20kubectl%20container/badge.svg)
+![Build and Publish kubectl container](https://github.com/lachie83/k8s-kubectl/workflows/Build%20and%20Publish%20kubectl%20container/badge.svg)
 
 ### Container Details
 [![](https://images.microbadger.com/badges/image/lachlanevenson/k8s-kubectl.svg)](http://microbadger.com/images/lachlanevenson/k8s-kubectl "Get your own image badge on microbadger.com")
