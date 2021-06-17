@@ -13,6 +13,7 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
 
 ENV KUBE_LATEST_VERSION="v1.21.2"
 
+RUN apk update
 RUN apk add --update ca-certificates
 RUN apk add -t deps
 RUN apk add --update curl
