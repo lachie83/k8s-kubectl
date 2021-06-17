@@ -15,7 +15,7 @@ ENV KUBE_LATEST_VERSION="v1.21.2"
 
 RUN apk add --update ca-certificates
 RUN apk add -t deps
-RUN apk add curl
+RUN apk add --update curl
 RUN export ARCH="$(uname -m)" && if [[ ${ARCH} == "x86_64" ]]; then export ARCH="amd64"; fi && curl -L https://storage.googleapis.com/kubernetes-release/release/${KUBE_LATEST_VERSION}/bin/linux/${ARCH}/kubectl -o /usr/local/bin/kubectl \
  && chmod +x /usr/local/bin/kubectl \
  && apk del --purge deps \
