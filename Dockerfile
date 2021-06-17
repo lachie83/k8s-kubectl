@@ -14,7 +14,8 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
 ENV KUBE_LATEST_VERSION="v1.21.2"
 
 RUN apk add --update ca-certificates \
- && apk add --update -t deps curl \
+ && apk add -t deps \
+ && apk add -t curl \
  && export ARCH="$(uname -m)" && if [[ ${ARCH} == "x86_64" ]]; then export ARCH="amd64"; fi && curl -L https://storage.googleapis.com/kubernetes-release/release/${KUBE_LATEST_VERSION}/bin/linux/${ARCH}/kubectl -o /usr/local/bin/kubectl \
  && chmod +x /usr/local/bin/kubectl \
  && apk del --purge deps \
