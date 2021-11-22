@@ -52,8 +52,8 @@ jobs:
           ${{ github.ref != 'refs/heads/main' && steps.docker_meta.outputs.tags || '' }}
           ${{ github.ref == 'refs/heads/main' && 'lachlanevenson/k8s-kubectl:latest' || '' }}
         labels: ${{ steps.docker_meta.outputs.labels }}
-      - name: Sign image
-        run: cosign sign --oidc-issuer https://token.actions.githubusercontent.com ${TAGS}
-        env:
-          TAGS: ${{ steps.docker_meta.outputs.tags }}
-          COSIGN_EXPERIMENTAL: 1
+    - name: Sign image
+      run: cosign sign --oidc-issuer https://token.actions.githubusercontent.com ${TAGS}
+      env:
+        TAGS: ${{ steps.docker_meta.outputs.tags }}
+        COSIGN_EXPERIMENTAL: 1
