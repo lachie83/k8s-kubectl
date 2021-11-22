@@ -9,6 +9,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    permissions:
+      id-token: write
+
     steps:
     - uses: actions/checkout@v2
     - name: Build and test kubectl container
@@ -49,8 +52,8 @@ jobs:
           ${{ github.ref != 'refs/heads/main' && steps.docker_meta.outputs.tags || '' }}
           ${{ github.ref == 'refs/heads/main' && 'lachlanevenson/k8s-kubectl:latest' || '' }}
         labels: ${{ steps.docker_meta.outputs.labels }}
-    - name: Sign image
-      env:
-        COSIGN_EXPERIMENTAL: 1
-      run: |
-        cosign sign --oidc-issuer=https://token.actions.githubusercontent.com steps.docker_meta.outputs.tags
+      - name: Sign image
+        run: cosign sign --oidc-issuer https://token.actions.githubusercontent.com ${TAGS}
+        env:
+          TAGS: ${{ steps.docker_meta.outputs.tags }}
+          COSIGN_EXPERIMENTAL: 1
